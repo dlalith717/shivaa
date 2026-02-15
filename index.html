@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medi.AI | Clinical Risk Stratification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+    <div class="sidebar">
+        
+        <div>
+            <div class="logo">
+                Medi.<span>AI</span>
+            </div>
+
+            <div class="nav">
+                <div class="nav-item" id="navDashboard">Dashboard</div>
+                <div class="nav-item active" id="navQueue">Active Queue</div>
+                <div class="nav-item" id="navSettings">Engine Settings</div>
+            </div>
+        </div>
+
+        <div class="logout">Log Out</div>
+    </div>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <div class="main">
+
+        <!-- ===== TRIAGE QUEUE PAGE ===== -->
+        <div id="queuePage" class="card">
+
+            <div class="title">Triage Queue</div>
+            <div class="subtitle">
+                Real-time risk classification for incoming patients.
+            </div>
+
+            <div class="patient">
+                <div class="avatar">P</div>
+                <div class="patient-info">
+                    <strong>#4491-X</strong>
+                    <p>Chest Pain | History: Hypertension</p>
+                </div>
+            </div>
+
+            <div class="risk-label">AI Risk Level</div>
+            <div class="risk-value">94.2%</div>
+            <div class="status">Stable (0.4ms latency)</div>
+
+            <button id="reviewBtn">REVIEW</button>
+        </div>
+
+
+        <!-- ===== ACTIVE QUEUE PAGE ===== -->
+        <div id="activePage" class="card hidden">
+
+            <div class="title">Active Queue</div>
+            <div class="subtitle">
+                Currently reviewed patients
+            </div>
+
+            <div class="patient">
+                <div class="avatar">P</div>
+                <div class="patient-info">
+                    <strong>#4491-X</strong>
+                    <p>Chest Pain | Hypertension</p>
+                </div>
+            </div>
+
+            <div class="risk-label">Risk Level</div>
+            <div class="risk-value">94.2%</div>
+            <div class="status">Under Review</div>
+
+            <button id="backBtn">Back to Queue</button>
+        </div>
+
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

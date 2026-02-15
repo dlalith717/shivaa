@@ -1,0 +1,193 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    width: 240px;
+    background-color: #0f172a;
+    color: white;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.logo span {
+    color: #22c55e;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-item {
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.nav-item:hover {
+    background-color: #1e293b;
+}
+
+.nav-item.active {
+    background-color: #2563eb;
+}
+
+.logout {
+    font-size: 14px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.logout:hover {
+    opacity: 1;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.main {
+    flex: 1;
+    padding: 40px;
+}
+
+/* Card Container */
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    max-width: 750px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* Titles */
+.title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Patient Section */
+.patient {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 55px;
+    height: 55px;
+    background-color: #fee2e2;
+    color: #dc2626;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.patient-info strong {
+    font-size: 16px;
+}
+
+.patient-info p {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Risk Section */
+.risk-label {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 5px;
+}
+
+.risk-value {
+    font-size: 34px;
+    font-weight: 700;
+    color: #dc2626;
+    margin-bottom: 5px;
+}
+
+.status {
+    font-size: 14px;
+    color: #16a34a;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Hidden utility */
+.hidden {
+    display: none;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .risk-value {
+        font-size: 26px;
+    }
+}
